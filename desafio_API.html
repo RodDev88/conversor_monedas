@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <title>Desafio APIs</title>
+</head>
+
+<style>
+    body {
+        font-family: Arial, Helvetica, sans-serif;
+        background-color: black;
+        color: white;
+    }
+    
+    .container {
+        width: 35%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: gray;
+    }
+    
+    #valores {
+        width: 40%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 5px;
+    }
+    
+    input {
+        margin-bottom: 10px;
+    }
+    
+    select {
+        margin-bottom: 5px;
+        width: 80%;
+    }
+    
+    button {
+        border-radius: 25px;
+        width: 80%;
+        /* color: lightskyblue;
+        color: white; */
+    }
+    
+    #grafico {
+        width: 100%;
+    }
+</style>
+
+<body>
+
+    <div class="container">
+        <h1>Conversor de monedas</h1>
+        <div id="valores">
+            <h2>Pesos cl</h2>
+            <input id="input" type="number">
+            <select name="" id="divisa">
+                 <option value="dolar">USD</option>
+                 <option value="uf">UF</option>
+            </select>
+            <button id="btn">Convertir</button>
+            <h3>Resultado: <span id="resultado"></span> </h3>
+            <h2 id="error"></h2>
+        </div>
+
+        <div id="grafico">
+            <canvas id="myChart"></canvas>
+        </div>
+
+    </div>
+
+
+    <script src="/assets/js/script.js"></script>
+
+    <!-- Al igual que todo el módulo me ha costado bastante. 
+            Debo reestudiar el módulo completo desde el incio -->
+
+
+</body>
+
+</html>
